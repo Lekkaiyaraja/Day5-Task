@@ -17,3 +17,9 @@ for (let i = 0; i<personal_info.experience.length; i++) {
     let experience = personal_info.experience[i];
     console.log(`company: ${experience.company}, position:${experience.position}`);
 }
+for (let value of Object.values(personal_info)) {
+    console.log(value);
+}
+Object.entries(personal_info).forEach(([key,value]) => {
+    console.log(key +": " + value);
+});
